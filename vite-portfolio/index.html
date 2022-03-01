@@ -18,16 +18,17 @@
     <div class="hero container">
       
       <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_ruzoywer.json" class="player" background="transparent"  speed="1"  style="width: 375px; height: 375px;" loop autoplay></lottie-player> 
-        <div>
+      
+      <div>
           <h1>Hello!<br> I am Hassan Saeed</h1>
           <br>
-          <h2>I develop and design your web ideas into a reality.</h2>
+          <h2>I am passionate about web development. I will help you design and develop your idea into reality.</h2>
           <button onClick="document.getElementById('project').scrollIntoView();">View Projects</button>
         </div>
     </div>
 
     <div class="about container">
-      <h2>About</h2>
+      <h2 class="section-title">About</h2>
 
       <div>
         <article>
@@ -49,56 +50,64 @@
 
     <div class="project container" id="project">
 
-      <h2>Projects</h2>
+      <h2 class="section-title">Projects</h2>
 
       <div class="project-tile">
         <h3>Film Forager</h3>
+        <div class="inner-tile">
         <img src="./public/filmf.webp">
         <p>Lorem ipsum, dolor sit amet consectetur elit. Atque reprehenderit aperiam, facilis iure similique blanditiis ut neque quibusdam tempora unde expedita cumque voluptatem dolorum.</p>
         <a href="">Live Demo</a>
       </div>
+      </div>
 
       <div class="project-tile">
         <h3>This or That? Game</h3>
+        <div class="inner-tile">
         <img src="./public/tot.webp">
         <p>Lorem ipsum, dolor sit amet consectetur elit. Atque reprehenderit aperiam, facilis iure similique blanditiis ut neque quibusdam tempora unde expedita cumque voluptatem dolorum.</p>
         <a href="">Live Demo</a>
       </div>
-
+    </div>
       <div class="project-tile">
         <h3>E-Commerce Store</h3>
+        <div class="inner-tile">
         <img src="./public/Glassic.webp">
         <p>Lorem ipsum, dolor sit amet consectetur elit. Atque reprehenderit aperiam, facilis iure similique blanditiis ut neque quibusdam tempora unde expedita cumque voluptatem dolor.</p>
         <a href="">Live Demo</a>
       </div>
-
+</div>
       <div class="project-tile">
         <h3>Wake Band Page</h3>
+        <div class="inner-tile">
         <img src="./public/WAKE.png">
         <p>Lorem ipsum, dolor sit amet consectetur elit. Atque reprehenderit aperiam, facilis iure similique blanditiis ut neque quibusdam tempora unde expedita cumque voluptatem dolor.</p>
         <a href="">Live Demo</a>
       </div>
-
+</div>
       <div class="project-tile">
         <h3>Link Keeper</h3>
+        <div class="inner-tile">
         <img src="./public/linkeeper.webp">
         <p>Lorem ipsum, dolor sit amet consectetur elit. Atque reprehenderit aperiam, facilis iure similique blanditiis ut neque quibusdam tempora unde expedita cumque voluptatem dolor.</p>
         <a href="">Live Demo</a>
       </div>
+</div>
 
       <div class="project-tile">
         <h3>Construction Landing Page</h3>
+        <div class="inner-tile">
         <img src="./public/design.png">
         <p>Lorem ipsum, dolor sit amet consectetur elit. Atque reprehenderit aperiam, facilis iure similique blanditiis ut neque quibusdam tempora unde expedita cumque voluptatem dolor.</p>
         <a href="">Live Demo</a>
       </div>
-
+</div>
       
     </div>
 
     
     <div class="gallery container">
-      <h2>Design Mockups</h2>  
+      <h2 class="section-title">Design Mockups</h2>  
       <img class="gallery-img" src="./public/3.png">
       <img class="gallery-img" src="./public/4.png">
       <img class="gallery-img" src="./public/15.png">
@@ -155,11 +164,12 @@
   </div>
 
   <footer class="contact container">
-   
-      <h2>Get in Touch!</h2>
-    
 
+      <div>
+    <h2>Get in Touch!</h2>
+      </div>
     <div class="contact-list">
+      
       <ul>
 
         <li class="icon-hover">
@@ -168,7 +178,7 @@
             href="https://mail.google.com/mail/?view=cm&fs=1&to=hsaeed1007@gmail.com"
             target="_blank"
             >
-            <span class="iconify icon-hover" data-icon="entypo:email" data-width="50" data-height="50"></span>
+            <span class="iconify" data-icon="entypo:email" data-width="50" data-height="50"></span>
             <p>Email</p>
           </a>
         </li>
@@ -179,7 +189,7 @@
             href="https://github.com/HassanSaeed7"
             target="_blank"
             >
-            <span class="iconify icon-hover" data-icon="bi:git" data-width="50" data-height="50"></span>
+            <span class="iconify" data-icon="bi:git" data-width="50" data-height="50"></span>
             <p>Github</p>
           </a>
         </li>
@@ -198,12 +208,14 @@
       </div>
 
       <div class="contact-form">
-        <h6>Let's make your idea a digital reality!</h6>
+      
       <form>
         <label for="name">Name</label>
         <input type="input" id="name">
+        <label for="email">Email</label>
+        <input type="email" id="email">
         <label for="message">Message</label>
-        <textarea rows="7" cols="50" name="message" id="message"></textarea> 
+        <textarea rows="5" cols="50" name="message" id="message"></textarea> 
         <input type="submit">
       </form>
     </div>

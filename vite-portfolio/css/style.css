@@ -95,14 +95,15 @@ p {
 
 .hero div h2 {
   font-weight: 100;
-  font-size: clamp(1.25rem, 3.5vw, 3rem);
+  font-size: clamp(1.25rem, 3vw, 2rem);
   font-family: 'Montserrat', sans-serif;
   margin: 0 auto 5%;
   text-align: left;
 }
 
 .hero div button {
-  background: #c76273;
+  background: -webkit-gradient(linear, left top, right top, from(#e61a5f), to(#ca247c));
+  background: linear-gradient(to right, #e61a5f, #ca247c);
   padding: 0.75em 1.5em;
   border: 1px solid rgba(199, 98, 115, 0.5);
   color: white;
@@ -183,14 +184,19 @@ p {
   margin: auto;
 }
 
-.project h2,
-.about h2 {
-  margin: 5% 1%;
-}
-
 .project-tile {
   width: 80%;
-  margin: 0 auto 7.5%;
+  margin: 5% auto;
+}
+
+.project-tile h3 {
+  font-size: clamp(2rem, 2vw, 3rem);
+  text-align: right;
+  font-weight: 200;
+  margin: 0 2.5%;
+}
+
+.inner-tile {
   min-height: 95vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -199,37 +205,31 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
-.project-tile h3 {
-  font-size: clamp(2rem, 3.5vw, 3rem);
-  text-align: right;
-  margin: 0 2.5%;
-}
-
-.project-tile img {
+.inner-tile img {
   width: 95%;
   -o-object-fit: cover;
      object-fit: cover;
   margin: 0 auto;
 }
 
-.project-tile p {
+.inner-tile p {
   width: 85%;
   margin: 0 auto;
-  text-indent: 25px;
   line-height: 1.7;
   text-align: left;
   font-size: clamp(1.15rem, 1.5vw, 2rem);
 }
 
-.project-tile a {
-  margin: 0 auto;
+.inner-tile a {
+  margin: 5% auto;
   font-size: 1.25rem;
-  background-color: #c76273;
+  background: -webkit-gradient(linear, left top, right top, from(#e61a5f), to(#ca247c));
+  background: linear-gradient(to right, #e61a5f, #ca247c);
   padding: 1em 2em;
   font-family: 'Montserrat', sans-serif;
   color: white;
@@ -238,7 +238,7 @@ p {
 
 .gallery {
   width: 90%;
-  margin: auto;
+  margin: 0 2.5%;
 }
 
 .gallery-img {
@@ -246,11 +246,15 @@ p {
   margin: 5% auto;
   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
           box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  -webkit-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
 }
 
 footer {
   color: white;
   background: #3397FD;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3397FD), to(#84BEF2));
+  background: linear-gradient(to bottom, #3397FD, #84BEF2);
 }
 
 footer h2 {
@@ -271,7 +275,7 @@ footer h2 {
 }
 
 .contact h2 {
-  font-size: clamp(3rem, 5vw, 5rem);
+  font-size: clamp(3rem, 5vw, 7rem);
 }
 
 .contact-list ul {
@@ -281,10 +285,11 @@ footer h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  margin: 5% auto;
+  width: 100%;
 }
 
 .contact-form {
@@ -293,9 +298,10 @@ footer h2 {
 
 .contact-form h6 {
   color: white;
-  font-size: clamp(1.25rem, 3vw, 3rem);
+  font-size: clamp(1.25rem, 2vw, 2rem);
   margin-left: 2.5%;
   margin-bottom: 5%;
+  font-weight: 200;
 }
 
 .contact-form form {
@@ -309,59 +315,36 @@ footer h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-bottom: 5%;
   width: 80%;
   margin: auto;
 }
 
 .contact-form form label {
-  font-size: clamp(1.5rem, 3.5vw, 3rem);
+  font-size: clamp(1.2rem, 2vw, 2rem);
   color: white;
   font-family: "Poppins", sans-serif;
 }
 
 .contact-form form input,
 .contact-form form textarea {
-  line-height: 2;
+  text-indent: 10px;
   margin: 2.5% 0;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  padding: 2.5%;
 }
 
 .contact-form form input:last-child {
   border: none;
   line-height: 2;
-  font-size: clamp(1.25rem, 3.5vw, 3rem);
+  font-size: clamp(1.2rem, 1.5vw, 2rem);
   cursor: pointer;
   width: 100%;
   margin: auto;
-  background: #c76273;
+  background: -webkit-gradient(linear, left top, right top, from(#e61a5f), to(#ca247c));
+  background: linear-gradient(to right, #e61a5f, #ca247c);
   color: white;
   font-weight: bold;
-}
-
-@media screen and (min-width: 768px) {
-  .hero {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .hero h2 {
-    width: 50%;
-  }
-  .contact ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
 }
 
 .fa-html5 {
@@ -414,10 +397,165 @@ footer h2 {
 }
 
 .icon-hover:hover {
-  color: #c76273;
+  color: #ca247c;
 }
 
 .player {
   margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    margin-bottom: 0;
+  }
+  .section-title {
+    position: relative;
+  }
+  .section-title::before {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 100px;
+    background: -webkit-gradient(linear, left top, right top, from(#e61a5f), to(#ca247c));
+    background: linear-gradient(to right, #e61a5f, #ca247c);
+    bottom: -5%;
+  }
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero div {
+    width: 50%;
+    margin-left: 2.5%;
+  }
+  .hero lottie-player {
+    zoom: 200%;
+  }
+  .about article {
+    margin: 0 auto;
+  }
+  .about article p {
+    margin: 2.5% auto;
+  }
+  .project-tile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    position: relative;
+  }
+  .project-tile h3 {
+    width: 30%;
+    text-align: left;
+  }
+  .inner-tile {
+    width: 100%;
+  }
+  .inner-tile p {
+    position: absolute;
+    top: 30%;
+    left: 2.5%;
+    width: 20%;
+  }
+  .gallery {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  .icon-hover a span, .icon-hover a p {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    zoom: 300%;
+    -webkit-margin-before: 0em;
+            margin-block-start: 0em;
+    -webkit-margin-after: 0em;
+            margin-block-end: 0em;
+  }
+  .icons {
+    zoom: 125%;
+  }
+  .contact {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .contact-list ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 100%;
+    gap: 5em;
+  }
+  .contact-form {
+    width: 50%;
+  }
+}
+
+@media (hover) {
+  .gallery-img:hover {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+  .hero div button {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  .hero div button:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .inner-tile img {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+            box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .inner-tile img:hover {
+    -webkit-transform: scale(0.998);
+            transform: scale(0.998);
+  }
+  .inner-tile a {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .inner-tile a:hover {
+    cursor: pointer;
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+  }
 }
 /*# sourceMappingURL=style.css.map */

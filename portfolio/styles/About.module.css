@@ -1,0 +1,13 @@
+.about {
+    width: 70%;
+}
+.aboutArticle p {
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}

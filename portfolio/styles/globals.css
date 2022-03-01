@@ -1,0 +1,36 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Poppin, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+li {
+  list-style: none;
+}
+::-webkit-scrollbar {
+  width: 0.5em;
+  height: 1em;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.25);
+  margin-block: 0.2em;
+  border-radius: 100vw;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 100vw;
+}

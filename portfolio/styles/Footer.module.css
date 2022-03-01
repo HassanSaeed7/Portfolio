@@ -1,0 +1,18 @@
+.contactLinks li {
+   margin: 5%; 
+   text-align: center;
+}
+.contactHeader {
+    font-size: clamp(2rem, 4vw, 7rem);
+    text-align: center;
+}
+.contactLinks {
+    padding-inline-start: 0px;
+}
+
+@media screen and (min-width: 768px) {
+.contactLinks {
+    display: flex;
+    justify-content: space-evenly;
+}
+}
